@@ -1,0 +1,50 @@
+# ChromiumWebhook Configuration
+
+# Discord webhook URL (required)
+webhook-url: ""
+
+# Server name to display in reports (supports PlaceholderAPI)
+server-name: "Minecraft Server"
+
+# Discord webhook appearance
+webhook-username: "ChromiumWebhook"
+webhook-avatar-url: ""
+
+# Report message format (supports PlaceholderAPI)
+report-message: "New player report submitted from %player%"
+
+# Show player avatars in reports
+show-avatars: true
+
+# Debug mode (enables additional logging)
+debug-mode: false
+
+# Include custom fields in reports
+include-custom-fields: false
+
+# Custom fields for reports (supports PlaceholderAPI)
+custom-fields:
+  # Example custom field (uncomment to use)
+  #server-info:
+  #  name: "Server Info"
+  #  value: "Players: %server_online%/%server_max_players%"
+  #  inline: true
+  
+  #player-location:
+  #  name: "Location"
+  #  value: "World: %player_world%, X: %player_x%, Y: %player_y%, Z: %player_z%"
+  #  inline: false
+
+# Message customization
+messages:
+  # Success messages (green)
+  report-sent: "&aYour report has been sent successfully!"
+  report-accepted: "&aReport has been accepted and will be reviewed."
+  report-resolved: "&aReport has been successfully resolved."
+  
+  # Error messages
+  report-failed: "&cFailed to send report. Please try again later."
+  webhook-error: "&cError sending to webhook. Your report was saved locally."
+  
+  # Status notifications
+  report-status-changed: "&eThe status of your report has been updated to: &f%status%"
