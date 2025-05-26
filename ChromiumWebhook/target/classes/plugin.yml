@@ -1,0 +1,8 @@
+name: ChromiumWebhook
+version: '1.0'
+main: me.chromisek.chromiumWebhook.ChromiumWebhook
+api-version: '1.20'
+depend: [ChromiumCore]
+softdepend: [PlaceholderAPI]
+description: Discord webhook integration for Chromium plugins
+authors: [Chromisek]
